@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: black;
+}
+.leftSide{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.cartImg{
+    position: relative;
+   background-color: beige;
+   font-size: 30px;
+   padding: 9px;
+   color: black;
+   border-radius: 10px;
+}
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.quantityCart{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    padding: 1px;
+}
+#shop{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+}
+.item{
+    width: 200px;
+    border: solid 2px black;
+}
+.paraLorem{
+    margin-top: 5px;
+}
+.butttons{
+    display: flex;
+    justify-content: space-between;
+}
+.addButtons{
+   display: flex;
+   gap: 20px;
+}
+
+@media (max-width : 1000px) {
+    #shop{
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+
+@media (max-width : 560px) {
+    #shop{
+        grid-template-columns: repeat(1, 250px);
+    }
+}
+
+.text-center{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.HomeBtn, .checkout, .removeAll{
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.bi-x-lg{
+    color:red;
+    font-weight: bold;
+}
+
+.shopping-cart{
+ display: grid;
+ grid-template-columns: repeat(1, 200px);
+ gap: 20px;
+ justify-content: center;
+}
+
+.cart-item{
+    display: flex;
+    border: 2px solid black;
+}
+.title-price-x{
+  display: flex;
+  flex-direction: row;
+}
+/* .pName{
+  margin-top: 0;
+} */
+.fa-xmark{
+    color: red;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.cost{
+    text-align: center;
+    background-color: #212529;
+    color: white;
+    border-radius: 20px;
+    font-size: small;
+   margin-left: 2px;
+   /* margin-right: 2px; */
+}
+.localBtn{
+    margin-top: 5px;
+}
+.checkout{
+    background-color: green;
+}
+.removeAll{
+    background-color: red;
+}
